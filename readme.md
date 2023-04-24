@@ -83,7 +83,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+Seminars:
+  1. Let's draw a figure with higher visibility
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
