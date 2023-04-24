@@ -16,16 +16,24 @@ finish = 15;
 range_of_interest = start*Fs+1:finish*Fs;
 figure;
 plot(signal(range_of_interest))
-%%
+%% call ModifyFigure
 modify_figure = ModifyFigure;
 time = modify_figure.get_time(signal,Fs);
 time_interest = time(range_of_interest);
-%%
+%% plot again
 modify_figure.figure;
 modify_figure.plot(time_interest,signal(range_of_interest));
-modify_figure.main()
-%%
+modify_figure.main();
+%% visualize config
 modify_figure.get_list_config;
-%%
+%% change config
 modify_figure.set_config('Color','r');
+%% plot again (again)
+modify_figure.figure;
+modify_figure.plot(time_interest,signal(range_of_interest));
+modify_figure.main();
+%% save figure
+save_figure = SaveFigure;
+save_figure.save_current_figure();
+
 

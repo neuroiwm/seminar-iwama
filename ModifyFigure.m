@@ -1,6 +1,6 @@
 classdef ModifyFigure < handle
     properties
-        config_plot = struct;
+        config_plot = struct;        
     end
 
     methods (Access = public)
@@ -18,7 +18,7 @@ classdef ModifyFigure < handle
             self.config_plot.label = {'Time [s]';'Amplitude [µV]'};
             self.config_plot.position_figure = [1, 1, 814, 380];
             self.config_plot.font_default = 'Arial';
-            self.config_plot.is_box = 0;
+            self.config_plot.is_box = 0;            
         end
 
         function self = set_config(self,varargin)
@@ -90,7 +90,7 @@ classdef ModifyFigure < handle
             end
         end
     end
-
+    
     methods (Static)
         function time = get_time(signal,Fs)
             time = 1/Fs:1/Fs:size(signal,1)/Fs;
