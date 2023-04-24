@@ -16,6 +16,7 @@ finish = 15;
 range_of_interest = start*Fs+1:finish*Fs;
 figure;
 plot(signal(range_of_interest))
+return
 %% call ModifyFigure
 modify_figure = ModifyFigure;
 time = modify_figure.get_time(signal,Fs);
