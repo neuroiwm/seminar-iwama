@@ -135,7 +135,7 @@ Please find readme.md in the nested directories.
 
 - [x] Seminar 1: Let's draw a figure with higher visibility
     - [x] Case 1: MATLAB
-    - [ ] Case 2: Python
+    - [x] Case 2: Python
 - [ ] Seminar 2
 - [ ] Seminar 3
     
