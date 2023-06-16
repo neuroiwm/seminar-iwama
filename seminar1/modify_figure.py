@@ -9,7 +9,7 @@ class ModifyFigure:
 
     def set_config_default(self):
         self.config_plot['FontWeight'] = 'normal'
-        self.config_plot['FontSize'] = 18
+        self.config_plot['FontSize'] = 36
         self.config_plot['LineWidth'] = 1
         self.config_plot['LineWidth_plot'] = 1.5
         self.config_plot['LineStyle'] = '-'

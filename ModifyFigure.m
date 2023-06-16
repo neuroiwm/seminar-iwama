@@ -14,9 +14,10 @@ classdef ModifyFigure < handle
             self.config_plot.LineWidth = 1;
             self.config_plot.LineWidth_plot = 1.5;
             self.config_plot.LineStyle = '-';
+            self.config_plot.Marker = 'None';
             self.config_plot.Color = 'k';
-            self.config_plot.label = {'Time [s]';'Amplitude [ÂµV]'};
-            self.config_plot.position_figure = [1, 1, 814, 380];
+            self.config_plot.label = {'Time [s]';'Amplitude [ƒÊV]'};
+            self.config_plot.position_figure = [1, 1, 753, 581];
             self.config_plot.font_default = 'Arial';
             self.config_plot.is_box = 0;            
         end
@@ -55,8 +56,8 @@ classdef ModifyFigure < handle
 
     methods (Access = public)
         function out_figure = figure(self)
-            out_figure = figure;
-            set(out_figure,'color',[1 1 1]);
+            out_figure = figure('Position',self.config_plot.position_figure);
+            set(out_figure,'color',[1 1 1]);%[R G B] max 1
         end
 
         function out_line = plot(self,time,data_plot)
@@ -66,9 +67,9 @@ classdef ModifyFigure < handle
               
             plot(time,data_plot,'Color',self.config_plot.Color, ...
                 'LineStyle',self.config_plot.LineStyle, ...
-                'LineWidth',self.config_plot.LineWidth_plot);
+                'LineWidth',self.config_plot.LineWidth_plot,...
+                'Marker',self.config_plot.Marker);
         end
-        
 
         function main(self)
             set(gcf,'color',[1 1 1])

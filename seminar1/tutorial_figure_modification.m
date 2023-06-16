@@ -28,7 +28,7 @@ modify_figure.main();
 %% visualize config
 modify_figure.get_list_config;
 %% change config
-modify_figure.set_config('Color','r');
+modify_figure.set_config('Color','b');
 %% plot again (again)
 modify_figure.figure;
 modify_figure.plot(time_interest,signal(range_of_interest));

@@ -85,6 +85,7 @@
 ## About The Project
 Seminars:
   1. Let's draw a figure with higher visibility
+  2. Guide for article surveillance
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,7 +137,7 @@ Please find readme.md in the nested directories.
 - [x] Seminar 1: Let's draw a figure with higher visibility
     - [x] Case 1: MATLAB
     - [x] Case 2: Python
-- [ ] Seminar 2
+- [x] Seminar 2: Guide for article surveillance
 - [ ] Seminar 3
     
 
